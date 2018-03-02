@@ -61,16 +61,16 @@ let rootRef = Database.database().reference();
 ```swift
 #ViewController.swift
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        rootRef.observe(DataEventType.value, with: { (snapshot) in
-            let value = snapshot.value as? NSDictionary
-            self.ConditionLabel.text = value?["parent"] as? String ?? ""
-        }) { (error) in
-            print(error.localizedDescription)
-        }
-    }
+override func viewDidAppear(_ animated: Bool) {
+  super.viewDidAppear(animated)
+  
+  rootRef.observe(DataEventType.value, with: { (snapshot) in
+    let value = snapshot.value as? NSDictionary
+    self.ConditionLabel.text = value?["parent"] as? String ?? ""
+  }) { (error) in
+       print(error.localizedDescription)
+     }
+}
 ```
 
 
