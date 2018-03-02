@@ -1,4 +1,4 @@
-#iOS Firebsase Tutorial Starter
+# iOS Firebsase Tutorial Starter
 
 An iOS tutorial to connect this app to the Firebase Database
 
