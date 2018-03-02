@@ -18,15 +18,17 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }    
+    }
     
-//     override func viewDidAppear(_ animated: Bool) {
-//      super.viewDidAppear(animated)
-//      rootRef.observe(DataEventType.value, with: { (snapshot) in
-//          let value = snapshot.value as? NSDictionary
-//          self.ChildLabel.text = value?["parent"] as? String ?? ""
-//      }) { (error) in
-//          print(error.localizedDescription)
-//      }        
+//      override func viewDidAppear(_ animated: Bool) {
+//       super.viewDidAppear(animated)
+//       rootRef.observe(DataEventType.value, with: { (snapshot) in
+//           let value = snapshot.value as? NSDictionary
+//           self.ChildLabel.text = value?["parent"] as? String ?? ""
+//       }) { (error) in
+//           print(error.localizedDescription)
+//       }
+//     }
         
 }
+
