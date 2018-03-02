@@ -1,7 +1,6 @@
-# iOS Firebase Starter
-iOS Firebase Starter
+An iOS tutorial to connect this app to the Firebase Database
 
-Pod install
+1. Pod install
 
 ```
 #Podfile
@@ -10,10 +9,12 @@ pod 'Firebase'
 pod 'Firebase/Database'
 ```
 
-Include GoogleService-Info.plist
+2. Include GoogleService-Info.plist into your project
+
+![alt text](https://image.ibb.co/bsKuJS/Screen_Shot_2018_03_02_at_3_27_13_PM.png "GoogleService-Info.plist")
 
 
-Import Firebase into App Delegate
+3. Import Firebase into App Delegate
 ```swift
 #AppDelegate.swift
 
@@ -21,7 +22,7 @@ import Firebase
 ```
 
 
-Override app initializaiton to include Firebase configurations
+4. Override app initializaiton to include Firebase configurations
 ```swift
 #AppDelegate.swift
 
@@ -30,7 +31,7 @@ override init() {
 }
 ```
 
-Add Label to `Main.Storyboard` and connect it to `ViewController.swift`
+5. Add Label to `Main.Storyboard` and connect it to `ViewController.swift`
 
 ```swift
 #ViewController.swift
@@ -38,14 +39,14 @@ Add Label to `Main.Storyboard` and connect it to `ViewController.swift`
 @IBOutlet weak var ConditionLabel: UILabel!
 ```
 
-Import Firebase into View Controller
+6. Import Firebase into View Controller
 ```swift
 #ViewController.swift
 
 import Firebase
 ```
 
-Create a reference to the root of the database
+7. Create a reference to the root of the database
 
 ```swift
 #ViewController.swift
@@ -53,7 +54,7 @@ Create a reference to the root of the database
 let rootRef = Database.database().reference();
 ```
 
-Override `viewDidAppear()` function to read database data events
+8. Override `viewDidAppear()` function to read database data events
 
 ```swift
 #ViewController.swift
@@ -69,3 +70,6 @@ Override `viewDidAppear()` function to read database data events
         }
     }
 ```
+
+
+Congratulations, you've connected your app to Firebase :tada:
