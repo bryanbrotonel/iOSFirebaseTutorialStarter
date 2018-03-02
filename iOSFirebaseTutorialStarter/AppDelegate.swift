@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  iOSFirebaseTutorialStarter
 //
-//  Created by Bryan Brotonel on 2018-02-23.
+//  Created by Bryan Brotonel on 2018-03-02.
 //  Copyright © 2018 Bryan Brotonel. All rights reserved.
 //
 
