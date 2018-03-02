@@ -74,4 +74,4 @@ override func viewDidAppear(_ animated: Bool) {
 ```
 
 
-Congratulations, you've connected your app to Firebase :tada:
+Congratulations, you've connected your app to Firebase Database :tada:
